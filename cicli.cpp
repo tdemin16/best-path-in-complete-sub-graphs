@@ -49,7 +49,6 @@ int main(int argc, char const *argv[]) {
     level[0] = 0;
     visit.push(0);
     visited.insert(0);
-    int count = 0;
 
     for(int j = 0; j < N; j++) {
         curr = visit.front();
@@ -68,10 +67,6 @@ int main(int argc, char const *argv[]) {
             }
         }
     }
-
-    //for (int i = 0; i < G.size(); ++i) {
-    //    cout << i << ": P=" << graph[i].parent << " L=" << graph[i].level << " C=" << graph[i].connected << endl;
-    //}
 
     for(int i = 0; i < Q; ++i) {
         in >> v1 >> v2;
